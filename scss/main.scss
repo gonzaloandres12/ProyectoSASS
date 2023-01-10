@@ -131,3 +131,21 @@ html {
   .feature-bg {
     background-color: #f5f5f5;
   }
+
+
+  @keyframes grow {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+  
+  .feature:hover {
+    animation-name: grow;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  

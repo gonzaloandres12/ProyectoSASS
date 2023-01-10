@@ -78,7 +78,6 @@ html {
 }
 .features .feature .feature-text {
   font-size: 1em;
-  text-indent: 2em;
 }
 
 .footer {
@@ -97,4 +96,32 @@ html {
 
 .feature-bg {
   background-color: #f5f5f5;
+}
+
+@-webkit-keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+.feature:hover {
+  -webkit-animation-name: grow;
+          animation-name: grow;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }/*# sourceMappingURL=main.css.map */
