@@ -1,0 +1,133 @@
+// archivo: scss/main.scss
+
+// Importamos los archivos con las variables, mixins y estilos específicos
+@import 'variables';
+@import 'mixins';
+
+
+
+// Estilos base
+html {
+  font-size: $font-size;
+  font-family: $font-family;
+}
+
+// Estilos para el header
+.header {
+  background-color: $primary-color;
+  padding: 1em;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar-brand {
+      color: white;
+      font-size: 1.5em;
+    }
+
+    .navbar-nav {
+      list-style: none;
+      display: flex;
+
+      .nav-item {
+        margin-left: 1em;
+
+        .nav-link {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Estilos para el jumbotron
+.jumbotron {
+  background-color: $secondary-color;
+  padding: 2em;
+  text-align: center;
+
+  .jumbotron-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+    
+  }
+
+  .jumbotron-text {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    text-indent: 0em;
+
+  }
+
+  .btn {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+// Estilos para las características 
+.features {
+    .section-title {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 2em;
+    }
+  
+    .feature {
+      text-align: center;
+      margin-bottom: 2em;
+  
+      img {
+        max-width: 100%;
+      }
+  
+      .feature-title {
+        font-size: 1.5em;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+      }
+  
+      .feature-text {
+        font-size: 1em;
+      }
+    }
+  }
+
+  
+  
+  // Estilos para el footer
+  .footer {
+    background-color: $primary-color;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  
+    .footer-text {
+      font-size: 0.8em;
+    }
+  }
+
+  .shadow-text {
+    @include text-shadow(2px, 2px, 2px, rgba(0,0,0,0.5));
+  }
+
+  .feature-bg {
+    background-color: #f5f5f5;
+  }

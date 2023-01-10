@@ -1,0 +1,9 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin text-shadow($x, $y, $blur, $color) {
+    text-shadow: $x $y $blur $color;
+  }
